@@ -36,30 +36,16 @@
 			<div class="row">
 				<div class="col-lg-9">
 					
-					<label for="username">Name</label>
-					<div class="input-group">
-  						<span class="input-group-addon" id="username"></span>
-  						<input type="text" class="form-control" placeholder="John Doe" aria-describedby="username">
-					</div>
-
-					<label for="useremail">Email</label>
-					<div class="input-group">
-  						<span class="input-group-addon" id="useremail"></span>
-  						<input type="text" class="form-control" placeholder="example@mail.com" aria-describedby="useremail">
-					</div>
-
-					<label for="usermsg">Message</label>
-					<div class="input-group">
-  						<span class="input-group-addon" id="usermsg"></span>
-  						<input type="text" class="form-control"  aria-describedby="usermsg">
-					</div>
-
-					<label for="submit"></label>
-					<div class="form-group">
-						<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-					</div>
-
-
+					<form action="mailto:nnien001@gmail.com" method="post" enctype="text/plain">
+					<section class="formFormat">Name: <br></section>
+					<input type="text" name="name" style="width: 600px;" value="john smith"><br>
+					<section class="formFormat">E-mail:<br></section>
+					<input type="text" name="mail" style="width: 600px;" value="example@mail.com"><br>
+					<section class="formFormat">Comment:<br></section>
+					<input type="text" name="comment" style="width: 600px; height: 200px;"><br>
+					<br>
+					<input type="submit" value="Send">
+				</form>
 				</div>
 
 				<div class="col-lg-3">
@@ -74,7 +60,6 @@
   						</div>
 					</div>
 				</div>
-
 
 			</div>
 		</div>
