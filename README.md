@@ -1,4 +1,3 @@
 # Bootstrap-Portfolio
 
-my portfolio for bootstrap.
-Cleaned up a bit for recruiters.
+my portfolio for bootstrap. Added php for email forms.
