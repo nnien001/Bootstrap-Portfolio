@@ -12,14 +12,14 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
 
-/*
+
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
 $email_address))
 {
     $errors .= "\n Error: Invalid email address";
 }
-*/
+
 
 if( empty($errors))
 {
@@ -33,7 +33,7 @@ if( empty($errors))
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: index.html');
+	header('Location: thanks.html');
 } 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
